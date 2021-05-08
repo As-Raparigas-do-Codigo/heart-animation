@@ -1,0 +1,63 @@
+HTML CSSResult Skip Results Iframe
+:root {
+  --heart: pink; 
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  background: #8A2387;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.heart {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--heart);
+  height: 100px;
+  width: 100px;
+  transform: rotate(-45deg);
+}
+
+.heart::after {
+  background-color: var(--heart);
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  left: 50px;
+}
+
+.heart::before {
+  content: "";
+  background-color: var(--heart);
+  border-radius: 50%;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  left: 0px;
+}
+
+.heart, .heart::after, .heart::before {
+ animation: rainbow 4s infinite;
+  }
+  
+  @keyframes rainbow {
+    0% {
+      background: pink;
+    }
+    50% {
+      background: turquoise;
+    }
+    100% {
+      background: white;
+    }
+  }
