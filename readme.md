@@ -2,7 +2,7 @@
 
 Super easy and cute heart animation with introduction to pseudo elements and animations, step by step.
 
- <img alt="Heart Image with css animation" src="./heart-animation.png" />
+ <img alt="Heart Image with css animation" src="./heart-animation.PNG" />
 
 ## HTML boiler template
 
